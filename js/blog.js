@@ -45,31 +45,6 @@ const blogPosts = [
       <p>Have fun reading!!! :D</p>
     `
   },
-  {
-    id: 4,
-    title: "Mapping Linguistic Boundaries in Transylvania",
-    date: "December 5, 2022",
-    category: "Regional",
-    excerpt: "A detailed look at the complex linguistic landscape of Transylvania and how it's changed over time.",
-    image: "https://placehold.co/600x400/cc0000/white?text=Transylvania+Linguistics&font=roboto",
-    content: `
-      <p>Transylvania represents one of Europe's most fascinating linguistic mosaics. Romanian, Hungarian, German, Romani, and other languages have coexisted and influenced each other for centuries.</p>
-      
-      <p>My mapping project focused on documenting how these linguistic boundaries have shifted from the 19th century to the present day. The results reveal patterns of migration, assimilation, and cultural preservation.</p>
-      
-      <h3>Key Findings:</h3>
-      <ol>
-        <li>Urban areas show much faster linguistic change than rural regions</li>
-        <li>Educational policies have had a significant impact on language preservation</li>
-        <li>Some communities maintain language islands despite being surrounded by different linguistic groups</li>
-        <li>The Hungarian-speaking areas show remarkable resilience along historical patterns</li>
-      </ol>
-      
-      <p>These maps aren't just academic exercises—they help communities understand their own history and policymakers make informed decisions about language education and preservation.</p>
-      
-      <p>The most challenging aspect was obtaining accurate contemporary data, as official statistics don't always reflect the complex reality of multilingual households and code-switching communities.</p>
-    `
-  }
 ];
 
 // Generate blog posts on page load
@@ -178,4 +153,5 @@ document.addEventListener("DOMContentLoaded", function() {
     blogObserver.observe(post);
   });
 });
+
 
