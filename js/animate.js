@@ -1,34 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Intersection Observer for fade-in animations
+  // Scroll animations
   const fadeElements = document.querySelectorAll(".fade-in");
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("appear");
       }
     });
-  }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-  
+  }, { threshold: 0.1 });
+
   fadeElements.forEach(el => observer.observe(el));
 
   // Mobile menu toggle
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      menuToggle.innerHTML = navMenu.classList.contains('active') 
+  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      mobileMenuBtn.innerHTML = navLinks.classList.contains("active") 
         ? '<i class="fas fa-times"></i>' 
         : '<i class="fas fa-bars"></i>';
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-      });
     });
   }
 
@@ -41,87 +34,29 @@ document.addEventListener("DOMContentLoaded", function () {
       
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        const headerHeight = document.querySelector('.navbar').offsetHeight;
-        const targetPosition = targetElement.offsetTop - headerHeight;
-        
         window.scrollTo({
-          top: targetPosition,
+          top: targetElement.offsetTop - 80,
           behavior: 'smooth'
         });
+        
+        // Close mobile menu if open
+        if (navLinks.classList.contains("active")) {
+          navLinks.classList.remove("active");
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
       }
     });
   });
 
-  // Active navigation link on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
-  
-  function highlightNavLink() {
-    let scrollPosition = window.scrollY + 100;
-    
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const sectionId = section.getAttribute('id');
-      
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
-          }
-        });
-      }
-    });
-  }
-  
-  window.addEventListener('scroll', highlightNavLink);
-  
-  // Form submission (placeholder)
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Get form data
-      const formData = new FormData(contactForm);
-      const data = Object.fromEntries(formData);
-      
-      // In a real application, you would send this to a server
-      console.log('Form submitted:', data);
-      
-      // Show success message
-      const submitBtn = contactForm.querySelector('.btn-submit');
-      const originalText = submitBtn.innerHTML;
-      
-      submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-      submitBtn.style.background = 'linear-gradient(135deg, #4CAF50, #2E7D32)';
-      
-      // Reset form
-      contactForm.reset();
-      
-      // Reset button after 3 seconds
-      setTimeout(() => {
-        submitBtn.innerHTML = originalText;
-        submitBtn.style.background = 'linear-gradient(135deg, var(--accent-gold), #ff8f00)';
-      }, 3000);
-    });
-  }
-
-  // Parallax effect for hero section
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    
-    if (hero) {
-      const heroHeight = hero.offsetHeight;
-      if (scrolled < heroHeight) {
-        const parallaxSpeed = 0.5;
-        hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-      }
+  // Navbar scroll effect
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 100) {
+      navbar.style.background = "rgba(255, 255, 255, 0.98)";
+      navbar.style.boxShadow = "0 5px 20px rgba(0, 0, 0, 0.1)";
+    } else {
+      navbar.style.background = "rgba(255, 255, 255, 0.95)";
+      navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.05)";
     }
   });
-
-  // Initialize scroll position
-  highlightNavLink();
 });
