@@ -6,7 +6,7 @@ const blogPosts = [
     date: "February 6th, 2026",
     category: "Exclusives",
     excerpt: "My Statistics for January 2026 and what surprises it gave us.",
-    image: "https://placehold.co/600x400/6a0dad/white?text=January+Wrapped&font=roboto",
+    image: "https://img.freepik.com/free-vector/paper-style-2026-logo-style-text-new-year-eve_1017-60883.jpg?semt=ais_hybrid&w=740&q=80",
     content: `
       <p>I was meaning to share these statistics with you all, do not fear, because this will become a monthly tradition for me.</p>
       <h2>The Statistics </h2>
@@ -39,7 +39,7 @@ const blogPosts = [
     date: "February 6th, 2026",
     category: "Launch",
     excerpt: "The launch of the ReghinGeo Blog.",
-    image: "https://placehold.co/600x400/6a0dad/white?text=Cartography+Evolution&font=roboto",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0begxcbWzpwG5oS1tKE9nm1d_uQ9gKw1Edg&s",
     content: `
       <p>Welcome to the official ReghinGeo Blog, where I will share experiences, tutorials, analytics, and many more fun stuff!</p>
       <p>Have fun reading!!! :D</p>
@@ -153,5 +153,6 @@ document.addEventListener("DOMContentLoaded", function() {
     blogObserver.observe(post);
   });
 });
+
 
 
