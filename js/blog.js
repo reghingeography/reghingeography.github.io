@@ -2,77 +2,47 @@
 const blogPosts = [
   {
     id: 1,
-    title: "The Art of Historical Map Recreation",
-    date: "March 15, 2023",
-    category: "Tutorial",
-    excerpt: "A deep dive into my process for recreating historical maps with modern tools and attention to detail.",
-    image: "https://placehold.co/600x400/6a0dad/white?text=Historical+Maps&font=roboto",
+    title: "January wrapped",
+    date: "February 6th, 2026",
+    category: "Exclusives",
+    excerpt: "My Statistics for January 2026 and what surprises it gave us.",
+    image: "https://placehold.co/600x400/6a0dad/white?text=January+Wrapped&font=roboto",
     content: `
-      <p>Historical map recreation is more than just copying old designs—it's about understanding the context, the tools available at the time, and the stories behind each boundary line.</p>
+      <p>I was meaning to share these statistics with you all, do not fear, because this will become a monthly tradition for me.</p>
+      <h2>The Statistics </h2>
       
-      <p>When I approach a historical map recreation, I start with extensive research. What were the political realities of the time? What mapping techniques were available? How accurate were the measurements?</p>
-      
-      <img src="https://placehold.co/800x400/cc0000/white?text=Map+Recreation+Process&font=roboto" alt="Map recreation process">
-      
-      <p>The tools I use have evolved significantly. While early maps were created with quill and parchment, I utilize modern GIS software alongside traditional design principles. This hybrid approach allows for both historical accuracy and visual appeal.</p>
-      
-      <h3>Key Steps in My Process:</h3>
-      <ol>
-        <li>Research historical sources and context</li>
-        <li>Digitize original boundaries using GIS tools</li>
-        <li>Recreate period-appropriate typography</li>
-        <li>Add contextual annotations and explanations</li>
-        <li>Present in both historical and modern contexts</li>
-      </ol>
-      
-      <p>The final product should educate while engaging the viewer. A successful historical map tells multiple stories: what was, what could have been, and how our understanding of borders has evolved.</p>
+      <p>ReghinGeo had 11.7K followers on TikTok at the end of December 2025, and we finished January with over 12.8K! That's 1100 new followers in a month! Crazy stats for me.</p>
+      <p>With this support, I am 100% sure that we'll reach 13K this month (not because I need 100 more followers lmao). February is a challenging month, as it has 28 days, and I have no idea how to achieve at least 1,000 followers in 28 days, since 1,000 followers is my goal.</p>
+      <p>I am looking forward to writing more blogs to inform literally no one.</p>
     `
   },
   {
     id: 2,
-    title: "Understanding European Microstates Through Maps",
-    date: "February 28, 2023",
+    title: "2026 Road Map",
+    date: "February 6th, 2026",
     category: "Analysis",
-    excerpt: "Exploring the fascinating world of European microstates and their unique geopolitical situations.",
-    image: "https://placehold.co/600x400/cc0000/white?text=European+Microstates&font=roboto",
+    excerpt: "The 2026 Road Map and things to expect.",
+    image: "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww",
     content: `
-      <p>Europe's microstates—Vatican City, Monaco, San Marino, Liechtenstein, and Andorra—represent fascinating anomalies in the modern nation-state system. Each has its own unique story of survival and adaptation.</p>
-      
-      <p>Through detailed mapping, we can better understand how these tiny territories maintain their sovereignty surrounded by much larger neighbors. Their borders, though small, tell stories of diplomacy, history, and sometimes sheer luck.</p>
-      
-      <p>In my latest series of maps, I've focused on:</p>
-      <ul>
-        <li>Comparative size visualizations</li>
-        <li>Historical border evolution</li>
-        <li>Economic and political relationships with neighbors</li>
-        <li>Population density patterns</li>
-      </ul>
-      
-      <p>One surprising finding: despite their size, these microstates have disproportionately complex border situations. Vatican City, for instance, has the most complex border per square kilometer of any state in the world.</p>
+      <p>2026 will definitely be a better year than 2025, I hope so... </p>
+      <p>ReghinGeo has, as of Feb. 6th 2026, a total of 22.2K followers, and we expect at least 15.0K and 10.0K on TikTok and instagram respectively, by the end of March. </p>
+      <p>In March, I would like to create some sort of series, i dont even have the idea planned, but if it does well and gets me followers, views, and likes, it will survive, and possibly be renewed for a season 2 perhaps. However, as we've seen from 3 FAILED series, this will most likely fail aswell.</p>
+      <p>ReghinGeo will DEFINITELY hop on trends, seen from the success of "Question for Romanians", which made 60K views and 67 new followers (shut up) </p>
+      <p>On the other side, to balance the views between TikTok and Instagram, I will post maps that do well on Instagram, which usually do badly on TikTok, but who knows, maybe it blows up on both platforms.</p>
+      <p>The long term goal is to reach 50.000 followers on TikTok, because of Bulletin Boards, which require atleast 50.000 followers, quite a stupid requirement in my opinion, I hope they lower it.</p>
+      <p>Thank you for reading this silly lil blog, see you in the next one!</p>
     `
   },
   {
     id: 3,
-    title: "The Future of Cartography in Social Media",
-    date: "January 10, 2023",
-    category: "Thoughts",
-    excerpt: "How platforms like TikTok and Instagram are changing how we create and consume maps.",
+    title: "The Launch",
+    date: "February 6th, 2026",
+    category: "Launch",
+    excerpt: "The launch of the ReghinGeo Blog.",
     image: "https://placehold.co/600x400/6a0dad/white?text=Cartography+Evolution&font=roboto",
     content: `
-      <p>The rise of short-form video platforms has revolutionized how geographic information is shared and consumed. As a cartographer active on TikTok and Instagram, I've witnessed this transformation firsthand.</p>
-      
-      <p>Traditional mapmaking was a slow, deliberate process. Today, we create maps that need to communicate complex ideas in seconds. This requires a different approach to design, focusing on:</p>
-      
-      <img src="https://placehold.co/800x400/6a0dad/white?text=Social+Media+Maps&font=roboto" alt="Social media maps">
-      
-      <ul>
-        <li><strong>Instant readability:</strong> Viewers should understand the map's message within the first 2-3 seconds</li>
-        <li><strong>Visual hierarchy:</strong> Emphasizing the most important elements through color and size</li>
-        <li><strong>Storytelling:</strong> Each map should tell a complete story or raise an interesting question</li>
-        <li><strong>Interactivity:</strong> Encouraging viewers to engage with the content through questions or polls</li>
-      </ul>
-      
-      <p>The future of cartography lies in balancing accuracy with accessibility. We're not dumbing down geography—we're making it more engaging for new audiences.</p>
+      <p>Welcome to the official ReghinGeo Blog, where I will share experiences, tutorials, analytics, and many more fun stuff!</p>
+      <p>Have fun reading!!! :D</p>
     `
   },
   {
@@ -208,3 +178,4 @@ document.addEventListener("DOMContentLoaded", function() {
     blogObserver.observe(post);
   });
 });
+
